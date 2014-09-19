@@ -23,3 +23,11 @@ An annual EmberJS hacker event for Teams and Individuals
     - [ ] Submit project section:
     - [ ] Viewing/voting section:
     - [ ] Winners sort:
+
+#### Competition Categories
+- Offline online app
+- Most inivative UI
+- Favorite over all
+- Favorite ember-addon
+
+
