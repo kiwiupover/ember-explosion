@@ -30,4 +30,9 @@ An annual EmberJS hacker event for Teams and Individuals
 - Favorite over all
 - Favorite ember-addon
 
+#### Divisions
+- Beginners: coding for less than a year
+- Junior: coding for one to three years
+- Open: coding ember for more than 5 years
+
 
