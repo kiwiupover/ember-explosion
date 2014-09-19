@@ -1,0 +1,20 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kiwiupover/ember-rodeo",
+  "authors": [
+    "Dave Laird <dlaird@godaddy.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flexboxgrid": "~6.1.1"
+  }
+}

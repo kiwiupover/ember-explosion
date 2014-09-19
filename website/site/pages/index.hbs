@@ -1,0 +1,43 @@
+{{#layout}}
+  <div class="hero row center-xs middle-xs">
+    <div class="col-sm-12">
+      <div class="box">
+        <div class="row middle-xs center-xs">
+          <div class="col-xs-8">
+            <div class="box">
+              <h1>
+                Ember Rodeo
+              </h1>
+              <h3>May 1st &mdash; 2nd 2015</h3>
+              <h5>The Ember.js Programming Competition</h5>
+              <p>Ember Rodeo is a distributed programming competition where hundreds of teams of one to four people, from all over the world, have 48 hours to build an innovative web application, with Ember.js javascript framework. </p>
+              {{>mail-chimp}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid sponsors">
+    <div class="row ptl pbm">
+      <div class="col-xs center-xs">
+        <h2>Sponsors</h2>
+      </div>
+    </div>
+
+    <div class="row around-xs">
+
+      {{#each page.sponsors}}
+        <div class="col-xs-2 mbm">
+          <div class="box">
+            <a href={{link}}>
+              <img src={{logo}} alt={{name}} width={{width}}>
+            </a>
+          </div>
+        </div>
+      {{/each}}
+      </div>
+    </div>
+  </div>
+
+{{/layout}}

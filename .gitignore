@@ -1,0 +1,12 @@
+# compiled output
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# misc
+/.sass-cache
+/libpeerconnection.log
+npm-debug.log
+testem.log
