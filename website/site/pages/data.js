@@ -1,65 +1,58 @@
 module.exports =  {
-  title: 'Home'
-, documentationUrl: 'http://broccoli-taco.com/documentation/'
+  title: 'Ember Rodeo'
 , sponsors: [
   {
     name: 'devshot',
-    logo: 'http://www.staticshowdown.com/images/sponsors/divshot.svg',
+    logo: '/static/images/divshot.svg',
     link: 'https://divshot.com/',
     width: '160'
   },
   {
     name: 'github',
-    logo: 'http://www.staticshowdown.com/images/sponsors/github.svg',
+    logo: '/static/images/github.svg',
     link: 'http://www.github.com/',
     width: '130'
   },
   {
     name: 'firebase',
-    logo: 'http://www.staticshowdown.com/images/sponsors/firebase.svg',
+    logo: '/static/images/firebase.svg',
     link: 'https://www.firebase.com',
     width: '160'
   },
   {
     name: 'dropbox',
-    logo: 'http://www.staticshowdown.com/images/sponsors/dropbox.svg',
+    logo: '/static/images/dropbox.svg',
     link: 'http://www.dropbox.com/',
     width: '160'
   },
   {
-    name: 'Sticker Mule',
-    logo: 'http://www.staticshowdown.com/images/sponsors/stickermule.svg',
+    name: 'sticker-mule',
+    logo: '/static/images/stickermule.svg',
     link: 'http://www.stickermule.com/',
     width: '200'
   },
   {
     name: 'devshot',
-    logo: 'http://www.staticshowdown.com/images/sponsors/divshot.svg',
+    logo: '/static/images/divshot.svg',
     link: 'https://divshot.com/',
     width: '160'
   },
   {
+    name: 'sprintly',
+    logo: '/static/images/sprintly.svg',
+    link: 'https://sprint.ly',
+    width: '160'
+  },
+  {
     name: 'github',
-    logo: 'http://www.staticshowdown.com/images/sponsors/github.svg',
+    logo: '/static/images/github.svg',
     link: 'http://www.github.com/',
     width: '130'
   },
   {
-    name: 'firebase',
-    logo: 'http://www.staticshowdown.com/images/sponsors/firebase.svg',
-    link: 'https://www.firebase.com',
-    width: '160'
-  },
-  {
-    name: 'dropbox',
-    logo: 'http://www.staticshowdown.com/images/sponsors/dropbox.svg',
-    link: 'http://www.dropbox.com/',
-    width: '160'
-  },
-  {
-    name: 'Sticker Mule',
-    logo: 'http://www.staticshowdown.com/images/sponsors/stickermule.svg',
-    link: 'http://www.stickermule.com/',
+    name: 'code-ship',
+    logo: '/static/images/codeship.png',
+    link: 'http://www.codeship.io/',
     width: '200'
   }
 ]

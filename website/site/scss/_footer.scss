@@ -32,6 +32,8 @@ $footer-background: #2C3E50;
   $base-accent-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
+  font-family: "open-sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 
   ul {
     margin: 0;
@@ -84,7 +86,7 @@ $footer-background: #2C3E50;
   }
 
   ul li {
-    font-weight: 800;
+    font-weight: 300;
     padding-right: 1em;
 
     @include media($large-screen) {
@@ -109,7 +111,7 @@ $footer-background: #2C3E50;
 
     li {
       font-size: 0.8em;
-      font-weight: 400;
+      font-weight: 300;
     }
 
     ul.footer-social {

@@ -1,6 +1,8 @@
 @import './css/vendor/normalize.scss';
 @import "../../node_modules/node-refills/assets/stylesheets/all";
 @import 'scss/flexgird';
+@import 'scss/header';
+@import 'scss/faqs';
 @import 'scss/footer';
 
 $xs: 0.2rem;
@@ -34,13 +36,18 @@ h1 {
   background: url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient(10deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
   background-size: cover;
   h3 {
-    color: #fff;
-    font-weight: 700;
-    font-size: 30px;
+    color: #F1C40F;
+    font-weight: 900;
+    font-size: 34px;
     padding-bottom: 20px;
+    text-shadow: 0 0 15px darken(#2980B9, 20%);
   }
   h5, p {
     color: white;
+  }
+  h5 {
+    font-weight: 100;
+    font-size: 30px
   }
   p {
     padding-top: $md;
@@ -65,12 +72,17 @@ h1 {
 
 .sponsors {
   background: #2C3E50;
-  border-top: 2px darken(#2C3E50, 3%) solid;
+  border-top: 3px darken(#2C3E50, 3%) solid;
   padding-bottom: 100px;
-  h2 {
-    color: white;
-    font-weight: 100;
-  }
+}
+
+h2 {
+  color: white;
+  font-weight: 100;
+}
+
+.text-left {
+  text-align: left;
 }
 
 @import 'scss/spaces';

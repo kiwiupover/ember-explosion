@@ -8,9 +8,13 @@
               <h1>
                 Ember Rodeo
               </h1>
-              <h3>May 1st &mdash; 2nd 2015</h3>
+              <h3>MAY 1 - 2, 2015</h3>
               <h5>The Ember.js Programming Competition</h5>
-              <p>Ember Rodeo is a distributed programming competition where hundreds of teams of one to four people, from all over the world, have 48 hours to build an innovative web application, with Ember.js javascript framework. </p>
+              <div class="row center-xs">
+                <div class="col-xs-10 col-sm-10 col-md-8">
+                  <p class="text-left">Ember Rodeo is a distributed programming competition where hundreds of teams of one to four people, from all over the world, have 48 hours to build an innovative web application, with Ember.js javascript framework. </p>
+                </div>
+              </div>
               {{>mail-chimp}}
             </div>
           </div>
@@ -24,11 +28,10 @@
         <h2>Sponsors</h2>
       </div>
     </div>
-
-    <div class="row around-xs">
+    <div class="row around-xs middle-xs">
 
       {{#each page.sponsors}}
-        <div class="col-xs-2 mbm">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 mbm">
           <div class="box">
             <a href={{link}}>
               <img src={{logo}} alt={{name}} width={{width}}>
@@ -36,6 +39,14 @@
           </div>
         </div>
       {{/each}}
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid faqs">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+        <h2>Frequently Asked Questions</h2>
+          {{>faqs}}
       </div>
     </div>
   </div>

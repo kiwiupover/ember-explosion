@@ -229,7 +229,7 @@ $lg-viewport: "only screen and (min-width: 75em)";
   order: 1;
 }
 
-@media ( #{$sm-viewport} ) {
+@media #{$sm-viewport} {
   .container {
     width: $container-sm, 46rem;
   }
@@ -423,7 +423,7 @@ $lg-viewport: "only screen and (min-width: 75em)";
   }
 }
 
-@media ( #{$md-viewport} ) {
+@media #{$md-viewport} {
   .container {
     width: $container-md, 61rem;
   }
@@ -617,7 +617,7 @@ $lg-viewport: "only screen and (min-width: 75em)";
   }
 }
 
-@media ( #{$lg-viewport} ) {
+@media #{$lg-viewport} {
   .container {
     width: $container-lg, 71rem;
   }
