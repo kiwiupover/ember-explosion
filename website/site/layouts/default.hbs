@@ -14,13 +14,15 @@
   {{css-tags}}
   {{>typekit}}
   </head>
-  <body>
+  <body class='background'>
     {{>header}}
 
     {{{yield}}}
 
     {{>footer}}
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
     {{javascript-tags}}
 
     <script src="//use.typekit.net/cxt8oid.js"></script>

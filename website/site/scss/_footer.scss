@@ -24,7 +24,7 @@
 //   }
 // }
 
-$footer-background: #2C3E50;
+$footer-background: #190400;
 
 .footer-2 {
   ///////////////////////////////////////////////////////////////////////////////////
@@ -50,12 +50,12 @@ $footer-background: #2C3E50;
   }
   //////////////////////////////////////////////////////////////////////////////////
 
-  $footer-background: desaturate(darken($base-accent-color, 20%), 30%);
+  /* \$footer-background: desaturate(darken(\$base-accent-color, 20%), 30%); */
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
-  background: darken($footer-background, 15%);
+  background: $footer-background;
   padding: $base-spacing;
   width: 100%;
   display: inline-block;

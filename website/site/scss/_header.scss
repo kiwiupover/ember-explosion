@@ -8,7 +8,7 @@
 
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: $dark-gray;
+  $centered-navigation-background: #122D3C;
   $centered-navigation-color: transparentize(white, 0.3);
   $centered-navigation-color-hover: white;
   $centered-navigation-height: 60px;
@@ -18,14 +18,32 @@
   $centered-navigation-item-nudge: 2.2em;
   $horizontal-bar-mode: $large-screen;
   font-family: "open-sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-color: $centered-navigation-background;
-  border-bottom: 2px solid darken($centered-navigation-background, 6%);
+  /* background-color: \$centered-navigation-background; */
+  background-color: transparent;
+  border-bottom: none;
+  /* border-bottom: 2px solid darken(\$centered-navigation-background, 6%); */
   min-height: $centered-navigation-height;
   width: 100%;
   z-index: 9999;
+  &:before {
+    $color: #2980b9;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: -moz-linear-gradient(100deg,  rgba(0,0,0,0) 50%, rgba(#2980b9,0.1) 50.1%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,rgba(0,0,0,0)), color-stop(50.1%,rgba(#2980b9,0.1)));
+    background: -webkit-linear-gradient(100deg,  rgba(0,0,0,0) 50%,rgba(#2980b9,0.1) 50.1%);
+    background: -o-linear-gradient(100deg,  rgba(0,0,0,0) 50%,rgba(#2980b9,0.1) 50.1%);
+    background: -ms-linear-gradient(100deg,  rgba(0,0,0,0) 50%,rgba(#2980b9,0.1) 50.1%);
+    background: linear-gradient(260deg,  rgba(0,0,0,0) 50%,rgba(#2980b9,0.1) 50.1%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1aa7a9ac',GradientType=1 );
+  }
 
   // Mobile view
-
   .mobile-logo {
     display: inline;
     float: left;
@@ -71,6 +89,7 @@
     @include clearfix;
     position: relative;
     z-index: 999;
+    background: linear-gradient(135deg, red, blue);
   }
 
   ul.centered-navigation-menu {
@@ -107,7 +126,7 @@
     line-height: $centered-navigation-height;
     overflow: hidden;
     padding-right: $centered-navigation-submenu-padding;
-    text-align: right;
+    text-align: center;
     width: 100%;
     z-index: 9999;
 

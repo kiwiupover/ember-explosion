@@ -1,6 +1,12 @@
 .faqs {
   $bg-color: #ecf0f1;
-  background: $bg-color;
+  $bg-color-dark: darken($bg-color, 5%);
+  background-image: url('/static/images/bg-light-trans.png');
+  background-color: #214271;
+  background: url('/static/images/bg-light-trans.png'), -webkit-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
+  background: url('/static/images/bg-light-trans.png'), -o-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
+  background: url('/static/images/bg-light-trans.png'), linear-gradient(10deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
+  background-size: cover;
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: 3px solid darken( $bg-color, 10%);

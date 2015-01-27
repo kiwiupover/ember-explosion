@@ -18,36 +18,53 @@ body {
 
 h1 {
   font-family: "ff-ernestine-web-pro",sans-serif;
-  font-size: 5rem;
-  letter-spacing: -0.3rem;
-  color: white   ;
+  font-size: 3rem;
+  letter-spacing: -0.1rem;
+  color: white;
+
+  @media #{$sm-viewport} {
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+  }
 }
 
 .row { }
+.background {
+  position: relative;
+  $bg-color: #2980B9;
+  $bg-color-dark: darken($bg-color, 40%);
+  height: 40rem;
+  background-image: url('/static/images/bg-dark-trans.png');
+  background-color: #214271;
+  background: url('/static/images/bg-dark-trans.png'), -webkit-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
+  background: url('/static/images/bg-dark-trans.png'), -o-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
+  background: url('/static/images/bg-dark-trans.png'), linear-gradient(10deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
+  background-size: cover;
+}
 
 .hero {
-  $bg-color: #2980B9;
-  $bg-color-dark: darken($bg-color, 10%);
-  height: 40rem;
-  background-image: url('http://emberconf.com/images/bg-dark.png');
-  background-color: #214271;
-  background: url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), -webkit-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
-  background: url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), -o-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
-  background: url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient(10deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
-  background-size: cover;
+  background: none;
+  position: relative;
+  z-index: 70;
   h3 {
     color: #F1C40F;
     font-weight: 900;
-    font-size: 34px;
+    font-size: 24px;
     padding-bottom: 20px;
     text-shadow: 0 0 15px darken(#2980B9, 20%);
+    @media #{$sm-viewport} {
+      font-size: 34px;
+    }
   }
   h5, p {
     color: white;
   }
   h5 {
     font-weight: 100;
-    font-size: 30px
+    font-size: 22px;
+    @media #{$sm-viewport} {
+      font-size: 30px;
+    }
   }
   p {
     padding-top: $md;
@@ -71,9 +88,13 @@ h1 {
 }
 
 .sponsors {
-  background: #2C3E50;
-  border-top: 3px darken(#2C3E50, 3%) solid;
+  $bg-color: #2c3e50;
+  background: $bg-color;
+  border-top: 3px darken($bg-color, 3%) solid;
   padding-bottom: 100px;
+  .box {
+    padding: 0 10px;
+  }
 }
 
 h2 {
