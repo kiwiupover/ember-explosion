@@ -1,0 +1,132 @@
+@import './css/vendor/normalize.scss';
+@import "../../node_modules/node-refills/assets/stylesheets/all";
+@import 'scss/flexgird';
+@import 'scss/header';
+@import 'scss/faqs';
+@import 'scss/footer';
+
+$xs: 0.2rem;
+$sm: 0.5rem;
+$md: 1rem;
+$lg: 1.5rem;
+$xl: 2rem;
+
+body {
+  font-family: "open-sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: "ff-ernestine-web-pro",sans-serif;
+  font-size: 3rem;
+  letter-spacing: -0.1rem;
+  color: white;
+
+  @media #{$sm-viewport} {
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+  }
+}
+
+.row { }
+.background {
+  position: relative;
+  $bg-color: #2980B9;
+  $bg-color-dark: darken($bg-color, 40%);
+  height: 40rem;
+  background: url('/static/images/bg-dark-trans.png') #214271 no-repeat;
+  background: url('/static/images/bg-dark-trans.png'), -webkit-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
+  background: url('/static/images/bg-dark-trans.png'), -moz-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
+  background: url('/static/images/bg-dark-trans.png'), -o-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
+  background: url('/static/images/bg-dark-trans.png'), linear-gradient(10deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  background: none;
+  position: relative;
+  z-index: 70;
+  h3 {
+    color: #F1C40F;
+    font-weight: 900;
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-shadow: 0 0 15px darken(#2980B9, 20%);
+    @media #{$sm-viewport} {
+      font-size: 34px;
+    }
+  }
+  h5, p {
+    color: white;
+  }
+  h5 {
+    font-weight: 100;
+    font-size: 22px;
+    @media #{$sm-viewport} {
+      font-size: 30px;
+    }
+  }
+  p {
+    padding-top: $md;
+  }
+}
+
+#mc-embedded-subscribe-form {
+  .mc-field-group {
+    label {
+      text-align: left;
+      color: white;
+    }
+  }
+  input[type="submit"] {
+    background-color: #27AE60;
+    width: 100%;
+    border-radius: 2px;
+    &:hover {
+      background-color: darken(#27AE60, 5%);
+    }
+  }
+}
+
+.sponsors {
+  $bg-color: #2c3e50;
+  background: $bg-color;
+  border-top: 3px darken($bg-color, 3%) solid;
+  padding-bottom: 50px;
+  .box {
+    padding: 0 10px;
+  }
+}
+
+h2 {
+  color: white;
+  font-weight: 100;
+}
+
+.text-left {
+  text-align: left;
+}
+
+button,
+textarea,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+.search-tools .filter > div,
+input[type="url"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+select[multiple=multiple] {
+  border-radius: 2px !important;
+}
+
+@import 'scss/spaces';
