@@ -34,12 +34,12 @@ h1 {
   $bg-color: #2980B9;
   $bg-color-dark: darken($bg-color, 40%);
   height: 40rem;
-  background-image: url('/static/images/bg-dark-trans.png');
-  background-color: #214271;
+  background: url('/static/images/bg-dark-trans.png') #214271 no-repeat;
   background: url('/static/images/bg-dark-trans.png'), -webkit-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
   background: url('/static/images/bg-dark-trans.png'), -o-linear-gradient(-280deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
   background: url('/static/images/bg-dark-trans.png'), linear-gradient(10deg, $bg-color, $bg-color-dark), no-repeat $bg-color-dark scroll;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero {
@@ -47,6 +47,7 @@ h1 {
   position: relative;
   z-index: 70;
   h3 {
+    font-family: "ff-ernestine-web-pro",sans-serif;
     color: #F1C40F;
     font-weight: 900;
     font-size: 24px;
@@ -91,7 +92,7 @@ h1 {
   $bg-color: #2c3e50;
   background: $bg-color;
   border-top: 3px darken($bg-color, 3%) solid;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   .box {
     padding: 0 10px;
   }
@@ -104,6 +105,27 @@ h2 {
 
 .text-left {
   text-align: left;
+}
+
+button,
+textarea,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+.search-tools .filter > div,
+input[type="url"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+select[multiple=multiple] {
+  border-radius: 2px;
 }
 
 @import 'scss/spaces';
