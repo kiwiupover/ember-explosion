@@ -54,4 +54,4 @@ View the site at [localhost:4200](http://localhost:4200)
 #### Divisions
 - Beginners: coding for less than a year
 - Junior: coding for one to three years
-- Open: coding ember for more than 5 years
+- Open: coding for more than 3 years
