@@ -26,7 +26,7 @@ View the site at [localhost:4200](http://localhost:4200)
 - [ ] Settle on a great name
     - Domains owned: emberexpo.com, emberblast.com, emberexplosion.com, emberrodeo.com, emberdojo.com
 - [X] Set up a page for Ember Rodeo: using? [broccolitaco](http://broccoli-taco.com/)?
-    - [X] Add a simple design to the home page
+    - [X] Add a simple design to the home page [EmberRodeo.com](http://staging.ember-rodeo.divshot.io/)
     - [X] Add signup form with MailChimp?
     - [ ] Add competition rules:
     - [ ] Add sponsorship slots: category, hosting, overall
