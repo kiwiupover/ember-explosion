@@ -1,4 +1,6 @@
 # Ember Rodeo
+
+[![Join the chat at https://gitter.im/kiwiupover/ember-explosion](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kiwiupover/ember-explosion?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 An annual EmberJS hacker event for Teams and Individuals
 
 ### For Review
